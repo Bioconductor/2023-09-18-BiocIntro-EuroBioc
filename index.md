@@ -87,6 +87,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 <div class="alert alert-warning">
 It looks like you are setting up a website for a Bioconductro Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>bioc-intro</code>, <code>bio-rna</code> or <code>bio-project</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
 </div>
+{% endunless %}
 {% endif %}
 
 {% comment %}
