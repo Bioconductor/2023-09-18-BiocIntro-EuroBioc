@@ -38,20 +38,20 @@ For a workshop please delete the following block until the next dashed-line
 {% endcomment %}
 
 
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-set the `pilot` field to `true` in `_config.yml`.
-For workshops teaching a lesson in The Carpentries Incubator,
-remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
-fields in `_config.yml`
-</div>
+<!-- <div class="alert alert-danger"> -->
+<!-- This is the workshop template. Delete these lines and use it to -->
+<!-- <a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a> -->
+<!-- your own website. If you are running a self-organized workshop or have not put -->
+<!-- in a workshop request yet, please also fill in -->
+<!-- <a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a> -->
+<!-- to let us know about your workshop and our administrator may contact you if we -->
+<!-- need any extra information. -->
+<!-- If this is a pilot workshop for a new lesson, -->
+<!-- set the `pilot` field to `true` in `_config.yml`. -->
+<!-- For workshops teaching a lesson in The Carpentries Incubator, -->
+<!-- remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey` -->
+<!-- fields in `_config.yml` -->
+<!-- </div> -->
 
 {% comment %}
 8< ============================= until here ==================
@@ -80,6 +80,13 @@ Check SWC curriculum
 It looks like you are setting up a website for a Software Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>swc-inflammation</code>, or <code>swc-gapminder</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
 </div>
 {% endunless %}
+{% endif %}
+
+{% if site.carpentry == "bioc" %}
+{% unless site.curriculum == "bioc-intro" or site.curriculum == "bioc-rna" or site.curriculum == "bioc-project" %}
+<div class="alert alert-warning">
+It looks like you are setting up a website for a Bioconductro Carpentry curriculum but you haven't specified the curriculum type in the <code>_config.yml</code> file (current value in <code>_config.yml</code>: "<strong>{{ site.curriculum }}</strong>", possible values: <code>bioc-intro</code>, <code>bio-rna</code> or <code>bio-project</code>). After editing this file, you need to run <code>make serve</code> again to see the changes reflected.
+</div>
 {% endif %}
 
 {% comment %}
@@ -117,7 +124,7 @@ the pitch.
 {% include dc/intro.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
-{% elsif site.carpentry == "bioc" %}	
+{% elsif site.carpentry == "bioc" %}
 {% include bioc/intro.html %}
 {% endif %}
 
@@ -137,7 +144,7 @@ workshop is only open to people from a particular institution.
 {% include dc/who.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
-{% elsif site.carpentry == "bioc" %}	
+{% elsif site.carpentry == "bioc" %}
 {% include bioc/who.html %}
 {% endif %}
 
@@ -390,7 +397,7 @@ of code below the Schedule `<h2>` header below with
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
-{% elsif site.carpentry == "bioc" %}	
+{% elsif site.carpentry == "bioc" %}
 {% include bioc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
 This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
@@ -432,7 +439,7 @@ please preview your site before committing, and make sure to run
   Data Carpentry
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
-  {% elsif site.carpentry == "bioc" %}	
+  {% elsif site.carpentry == "bioc" %}
   Bioconductor workshop
   {% endif %}
   workshop,
@@ -470,7 +477,7 @@ during the workshop.
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
-{% elsif site.carpentry == "bioc" %}	
+{% elsif site.carpentry == "bioc" %}
 {% include bioc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
 Please check the "Setup" page of
