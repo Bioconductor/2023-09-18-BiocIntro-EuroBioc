@@ -314,14 +314,17 @@ Edit the text to match who can attend the workshop. For instance:
   <li>Free for UGent participants (funded by the UGent Doctoral
   Schools).</li>
 
-  <li><b><a href="https://forms.gle/qhcVZhrn789e28Nz9">Application
-  form</a></b>. Places are limited to 30 participants, on a first-come
+  <li>Places are limited to 30 participants, on a first-come
   first-serve basis.</li>
 
   <li>A confirmation email with payment detail will be sent on a
-  weekly basis from 1 August on wards.</li>
+  weekly basis from 1 August on wards. Registration will be final
+  after payment</b>. We will not be able to refund the registration
+  fees.</li>
 
-  <li><b>Registration final after payment</b>.</li>
+  <li>To register, please fill out the <b><a
+  href="https://forms.gle/qhcVZhrn789e28Nz9">application
+  form</a></b>.</li>
 
 </ul>
 
@@ -484,15 +487,6 @@ please preview your site before committing, and make sure to run
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
-<h2 id="sponsor">Sponsor</h2>
-
-<figure>
-  <img src="fig/Flanders_horizontaal_.jpeg" alt="Flanders region" style="width:30%">
-  <img src="fig/doctoralschoolsprofiel_hq_rgb_web.png" alt="UGent Doctoral School" style="width:30%">
-</figure>
-
-<hr/>
-
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
@@ -525,3 +519,14 @@ Please check the "Setup" page of
 [the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
+
+<hr/>
+
+<h2 id="sponsor">Sponsors</h2>
+
+<figure>
+  <img src="fig/Flanders_horizontaal_.jpeg" alt="Flanders region" style="width:25%">
+  <img src="fig/doctoralschoolsprofiel_hq_rgb_web.png" alt="UGent Doctoral School" style="width:25%">
+</figure>
+
+<hr/>
