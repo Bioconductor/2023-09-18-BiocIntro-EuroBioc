@@ -4,11 +4,11 @@ layout: workshop      # DON'T CHANGE THIS.
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
 venue: "Ghent University"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "TBC"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+address: "Faculty of Sciences, Campus De Sterre, Building S9, Room 3.3 Kunrad Zuse"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "be"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "51.0843151"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "3.5497577"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+latitude: "51.0221881"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "3.7103162"       # decimal longitude of the workshop venue (use https://www.latlong.net)
 humandate: "Sep 18-19, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:00 am - 5:00 pm"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2023-09-18      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
@@ -303,13 +303,44 @@ Edit the text to match who can attend the workshop. For instance:
 
 <hr/>
 
+<h2 id="registration">Registration</h2>
+
+<b>This is an in-person workshop only. Virtual attendance is not possible.</b>
+
+<ul>
+
+  <li>Costs: <b>100 euros</b> for both days.</li>
+
+  <li>Free for UGent participants (funded by the UGent Doctoral
+  Schools).</li>
+
+  <li><b><a href="https://forms.gle/qhcVZhrn789e28Nz9">Application
+  form</a></b>. Places are limited to 30 participants, on a first-come
+  first-serve basis.</li>
+
+  <li>A confirmation email with payment detail will be sent on a
+  weekly basis from 1 August on wards.</li>
+
+  <li><b>Registration final after payment</b>.</li>
+
+</ul>
+
+
+<hr/>
+
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in Bioconductor activities is required to conform to the <a href="https://bioconductor.github.io/bioc_coc_multilingual/">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+
+Everyone who participates in Bioconductor activities is required to
+conform to the <a
+href="https://bioconductor.github.io/bioc_coc_multilingual/">Code of
+Conduct</a>. This document also outlines how to report an incident if
+needed.
+
 </p>
 
 <p class="text-center">
@@ -343,29 +374,29 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% endif %}
 
 
-{% comment %}
-SURVEYS - DO NOT EDIT SURVEY LINKS
-{% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
-{% elsif site.incubator_pre_survey or site.incubator_post_survey %}
-<div class="alert alert-danger">
-WARNING: you have defined custom pre- and/or post-survey links for
-a workshop not configured for The Carpentries Incubator
-(the value of `curriculum` is not set to `incubator` in `_config.yml`).
-Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields
-in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
-change the value of `carpentry` to `incubator`.
-</div>
-{% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% endif %}
+<!-- {% comment %} -->
+<!-- SURVEYS - DO NOT EDIT SURVEY LINKS -->
+<!-- {% endcomment %} -->
+<!-- <h2 id="surveys">Surveys</h2> -->
+<!-- <p>Please be sure to complete these surveys before and after the workshop.</p> -->
+<!-- {% if site.carpentry == "incubator" %} -->
+<!-- <p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p> -->
+<!-- <p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p> -->
+<!-- {% elsif site.incubator_pre_survey or site.incubator_post_survey %} -->
+<!-- <div class="alert alert-danger"> -->
+<!-- WARNING: you have defined custom pre- and/or post-survey links for -->
+<!-- a workshop not configured for The Carpentries Incubator -->
+<!-- (the value of `curriculum` is not set to `incubator` in `_config.yml`). -->
+<!-- Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields -->
+<!-- in `_config.yml` or, if this workshop is teaching a lesson in the Incubator, -->
+<!-- change the value of `carpentry` to `incubator`. -->
+<!-- </div> -->
+<!-- {% else %} -->
+<!-- <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p> -->
+<!-- <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p> -->
+<!-- {% endif %} -->
 
-<hr/>
+<!-- <hr/> -->
 
 
 {% comment %}
@@ -452,6 +483,15 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
+
+<h2 id="sponsor">Sponsor</h2>
+
+<figure>
+  <img src="fig/Flanders_horizontaal_.jpeg" alt="Flanders region" style="width:30%">
+  <img src="fig/doctoralschoolsprofiel_hq_rgb_web.png" alt="UGent Doctoral School" style="width:30%">
+</figure>
+
+<hr/>
 
 {% comment %}
 For online workshops, the section below provides:
