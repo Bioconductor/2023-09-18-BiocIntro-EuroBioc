@@ -527,7 +527,7 @@ to obtain the software and data you will need to follow the lesson.
 <figure>
   <img src="fig/Flanders_horizontaal_.jpeg" alt="Flanders region" style="width:25%">
   <img src="fig/doctoralschoolsprofiel_hq_rgb_web.png" alt="UGent Doctoral School" style="width:25%">
-  <img src="fig/EuropeanBioconductorSociety.png" alt="European Bioconductor Society" style="width:25%> 
+  <img src="fig/EuropeanBioconductorSociety.png" alt="European Bioconductor Society" style="width:25%">
 </figure>
 
 <hr/>
