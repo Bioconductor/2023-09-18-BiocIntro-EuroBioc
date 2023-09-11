@@ -322,9 +322,8 @@ Edit the text to match who can attend the workshop. For instance:
   after payment</b>. We will not be able to refund the registration
   fees.</li>
 
-  <li>To register, please fill out the <b><a
-  href="https://forms.gle/qhcVZhrn789e28Nz9">application
-  form</a></b>.</li>
+  <li><s>To register, please fill out the application
+  form</s>. The workshop is full.</li>
 
 </ul>
 
